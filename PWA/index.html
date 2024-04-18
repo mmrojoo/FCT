@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formula 4 YOU</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="icon" type="image/x-icon" href="img/imgf4.ico">
+    <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Racing+Sans+One&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;700;800&display=swap" rel="stylesheet">
+
+</head>
+
+    <!-- AQUI CREAMOS EL HEADER QUE SE VERÁ EN LA PARTE POSTERIOR DE LA PÁGINA -->
+    <header>
+        <!-- EL NAV SERVIRÁ COMO MENÚ PARA ACCEDER A CUALQUIERA DE LOS APARTADOS -->
+        <nav>
+            <a href="https://www.formula1.com/en/latest">NOTICIAS</a>
+            <a href="auth/login.php">INICIAR SESIÓN</a>
+            <a href="auth/registro.php">CREA TU CUENTA</a>
+            <a href="#productos">DISEÑA (casco/mono)</a>
+        </nav>
+        <!-- EL TÍTULO PRINCIPAL CON EL ESLOGAN -->
+        <section class="textos-header">
+            <div id="hijo">
+                <h1>FORMULA 4 YOU </h1>
+                <h2>Saca tu lado más creativo</h2>
+            </div>
+        </section>
+    </header>
+    <body>
+
+        <!-- PRODUCTOS -->
+        <!-- SE CREA ALGO PARECIDO A NOTICIAS, LAS CARDS CON SUS ESPECIFICACIONES Y FOTOS, ADEMÁS DE SU RESPECTIVA ETIQYETA A, CON UN HREF
+        QUE CONDUCE AL FORMULARIO DISEÑADO PARA CADA PRODUCTO -->
+        <section class="productos">
+            <h1 id="productos">DISEÑA Y CONSULTA</h1>
+            <div class="contenedor sobre-nosotros">
+                <div class="container">
+                    <div class="card">
+                        <figure>
+                            <img id="casco" src="img/cascof1.jpg" alt="">
+                        </figure>
+                        <div id="padding2" class="contenido">
+                            <h3>DISEÑA TU PROPIO CASCO</h3>
+                            <a href="cascoForm.html"> Diseñar </a>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <figure>
+                            <img id="fernando" src="img/pilotosTodos.png" alt="">
+                        </figure>
+                        <div class="contenido">
+                            <h3>CONSULTA LOS PILOTOS DE LA TEMPORADA 2022</h3>
+                            <a href=""> Consultar </a>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <figure>
+                            <img id="mono" src="img/monoF1.jpg" alt="">
+                        </figure>
+                        <div id="padding" class="contenido">
+                            <h3>DISEÑA TU PROPIO MONO</h3>
+                            <a href="monoForm.html"> Diseñar </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- EN TODO EL FOOTER QUEREMOS DAR LA INFORMACIÓN MÁS PERSONAL Y COMO LOS CLIENTES PUEDES CONTACTAR CON NOSOTROS, EN ESTE CASO, EL TELÉFONO, EMAIL
+       UBICACIÓN Y NUESTROS NOMBRES -->
+    <footer>
+        <div class="contenedor-footer">
+            <div class="content-foo">
+                <h4>Teléfono</h4>
+                <p>+34 938345873</p>
+            </div>
+            <div class="content-foo">
+                <h4>Mail</h4>
+                <p>formula4you@gmail.com</p>
+            </div>
+            <div class="content-foo">
+                <h4>Ubicación</h4>
+                <a href="https://www.google.es/maps/place/Circuit+de+Barcelona-Catalunya/@41.5683778,2.2516212,15.7z/data=!4m5!3m4!1s0x12a4b8ecc053a0f1:0x150ed08bef7e2b48!8m2!3d41.5684837!4d2.2573012"> Tienda física</a>
+            </div>
+        </div>
+        <h2 class="final">&copy; Mario Martín Rojo</h2>
+    </footer>
+    </body>
+
+</html>

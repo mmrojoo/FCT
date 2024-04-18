@@ -1,0 +1,118 @@
+/* Reset default margin and padding */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+  /* Body styles */
+  body {
+    font-family: 'Open Sans', sans-serif;
+    background-color: #f7f7f7;
+  }
+
+  /* Form container styles */
+  main {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+
+  /* Form section styles */
+  section {
+    margin-bottom: 20px;
+  }
+
+  /* Form label styles */
+  label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+    color: #333;
+  }
+
+  /* Form input styles */
+  input[type="text"],
+  input[type="tel"],
+  input[type="email"],
+  textarea {
+    width: 100%;
+    padding: 10px;
+    border-radius: 3px;
+    border: 1px solid #ccc;
+  }
+
+  /* Form color input styles */
+  input[type="color"] {
+    width: 50px;
+    height: 30px;
+    border: none;
+    padding: 0;
+  }
+
+  /* Form radio button styles */
+  input[type="radio"] {
+    margin-right: 5px;
+  }
+
+  /* Form submit button styles */
+  button[type="submit"] {
+    background-color: #007bff;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+  }
+
+  /* Form footer styles */
+  footer {
+    background-color: #333;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+  }
+
+  /* Form footer link styles */
+  footer a {
+    color: #fff;
+    text-decoration: none;
+  }
+
+  /* Form footer link hover styles */
+  footer a:hover {
+    text-decoration: underline;
+  }
+
+  /* Custom styles for this specific form */
+
+  /* Form title styles */
+  #titu {
+    text-align: center;
+  }
+
+
+  /* Styling for the submit button */
+  button[type="submit"] {
+    display: block;
+    margin: 0 auto;
+  }
+
+  /* Styling for the footer section */
+  .contenedor-footer {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+
+  .content-foo {
+    flex-basis: 33.33%;
+    margin-bottom: 20px;
+  }
+
+  .final {
+    margin-top: 30px;
+  }
