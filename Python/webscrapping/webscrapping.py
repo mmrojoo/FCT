@@ -2,7 +2,7 @@ import requests
 from bs4 import BeautifulSoup
 import pymongo
 
-client = pymongo.MongoClient("mongo", 27017)
+client = pymongo.MongoClient("192.168.56.1", 27018)
 db = client['formula4youdb']
 collection = db['pilotos']
 
