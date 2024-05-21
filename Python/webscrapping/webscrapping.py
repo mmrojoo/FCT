@@ -17,14 +17,19 @@ try:
     soup = BeautifulSoup(response.text, 'html.parser')
 
     # Encontrar todos los datos
-    escuderias = [p_tag.text for p_tag in soup.find_all('p', class_='listing-item--team f1--xxs f1-color--gray5')]
-    ranking = [div_tag.text for div_tag in soup.find_all('div', class_='rank')]
-    puntos = [div_tag.text for div_tag in soup.find_all('div', class_='f1-wide--s')]
-    nombres = [span_tag.text.strip() for span_tag in
-               soup.find_all('span', class_='d-block f1--xxs f1-color--carbonBlack')]
-    apellidos = [span_tag.text.strip() for span_tag in
-                 soup.find_all('span', class_='d-block f1-bold--s f1-color--carbonBlack')]
-
+    escuderias = [p_tag.text.strip() for p_tag in
+                  soup.find_all('p',
+                                class_='f1-heading tracking-normal text-fs-12px leading-tight normal-case font-normal non-italic f1-heading__body font-formulaOne text-greyDark')]
+    ranking = [p_tag.text.strip() for p_tag in soup.find_all('p',
+                                                             class_='f1-heading-black font-formulaOne tracking-normal font-black non-italic text-fs-42px leading-none')]
+    puntos = [p_tag.text.strip() for p_tag in soup.find_all('p',
+                                                            class_='f1-heading-wide font-formulaOneWide tracking-normal font-normal non-italic text-fs-18px leading-none normal-case')]
+    nombres = [p_tag.text.strip() for p_tag in
+               soup.find_all('p',
+                             class_='f1-heading tracking-normal text-fs-12px leading-tight uppercase font-normal non-italic f1-heading__body font-formulaOne')]
+    apellidos = [p_tag.text.strip() for p_tag in
+                 soup.find_all('p',
+                               class_='f1-heading tracking-normal text-fs-18px leading-tight uppercase font-bold non-italic f1-heading__body font-formulaOne')]
     # Verificar y actualizar los datos en la base de datos
     for escuderia, rank, punto, nombre, apellido in zip(escuderias, ranking, puntos, nombres, apellidos):
         driver = {

@@ -1,0 +1,21 @@
+// Este archivo define la configuración de la base de datos para diferentes entornos (desarrollo, test, producción)
+// Aunque Sequelize es principalmente utilizado con bases de datos relacionale
+// puedes configurarlo para conectarse a MongoDB utilizando sequelize-auto-migrations.
+
+{
+  "development": {
+    "dialect": "mongodb",
+    "url": "mongodb://mongo:27018/formula4youdb",
+    "logging": false
+  },
+  "test": {
+    "dialect": "mongodb",
+    "url": "mongodb://mongo:27018/formula4youdb",
+    "logging": false
+  },
+  "production": {
+    "dialect": "mongodb",
+    "url": "mongodb://mongo:27018/formula4youdb",
+    "logging": false
+  }
+}
